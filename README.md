@@ -10,6 +10,8 @@ driver.js     : Contains code to execute functions using the local dataset (i.e 
 
 dataset.json  : Contains copy of dataset in json format
 
+Task          : Contains Angular Application
+
 ## Requirements
 NodeJS
 
@@ -26,4 +28,14 @@ node driver.js
 OR
 ```bash
 node main.js
+```
+
+Angular Application
+navigate to the Task Folder and run
+```bash
+npm start
+```
+OR
+```bash
+ng serve
 ```
