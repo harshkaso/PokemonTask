@@ -1,0 +1,7 @@
+{  
+    "/*": {  
+       "target": "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json",  
+       "secure": false,  
+       "logLevel": "debug"  
+    }  
+ }  

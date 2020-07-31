@@ -1,0 +1,75 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: inherit;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #111;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: teal;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+  }
+
+  .align-center {
+      text-align: center;
+  }
+  
+  .teal{
+    background-color: teal;
+    color: white;
+  }
+  
+  .black{
+    background-color: #111;
+    color: white;
+  }
+
+  .blue{
+    background-color: royalblue;
+    color: white;
+  }
+  
+  .toolbar{
+    background-color: #111;
+    color: teal;
+    justify-content: center;
+  }
+  
+  .full-width{
+      width: 90%;
+  }
+
+  .result{
+    width: 70%;
+    height: 70%;
+  }
+  
+  .functions{
+      width: 70%;
+  }
+
+  .content{
+    width: 90%;
+    height:75%;
+  }

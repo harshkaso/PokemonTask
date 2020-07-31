@@ -1,0 +1,56 @@
+<body>
+  <mat-toolbar class="toolbar">
+    <h1 class="mat-display-1">POKEMON TASK</h1>
+  </mat-toolbar>
+  <div class="split left">
+    <div class="centered functions">
+      <mat-card class="teal full-width">
+        <mat-card-header style="color: #111">SEARCH BY NAME</mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" #name/>
+          </mat-form-field>
+          <button mat-raised-button class="blue full-width" [disabled]="!name.value" (click)="getByName(name.value)">SEARCH</button>
+        </mat-card-content>      
+      </mat-card>
+      <br>
+      <br>
+      <br>
+      <mat-card class="teal full-width">
+        <mat-card-header style="color: #111">SEARCH BY NEXT EVOLUTION</mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <mat-label>Next Evolution</mat-label>
+            <input matInput type="text" #nextEvo/>
+          </mat-form-field>
+          <button mat-raised-button class="blue full-width" [disabled]="!nextEvo.value" (click)="getByNextEvolution(nextEvo.value)">SEARCH</button>
+        </mat-card-content>      
+      </mat-card>
+      <br>
+      <br>
+      <br>
+      <mat-card class="teal full-width">
+        <mat-card-header style="color: #111">SEARCH BY WEAKNESS</mat-card-header>
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <mat-label>Weakness</mat-label>
+            <input matInput type="text" #weakness/>
+          </mat-form-field>
+          <button mat-raised-button class="blue full-width" [disabled]="!weakness.value" (click)="getByWeakness(weakness.value)">SEARCH</button>
+        </mat-card-content>      
+      </mat-card>
+    </div>
+    
+  </div>
+  <div class="split right">
+    <mat-card class="centered black result">
+      <mat-card-title style="color: teal;">RESULT</mat-card-title>
+      <mat-card-content style="color: teal; text-align: left; overflow: auto; height: 95%;">
+        <pre>
+          {{result | json}}
+        </pre>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>
