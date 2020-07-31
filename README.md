@@ -30,7 +30,7 @@ OR
 node main.js
 ```
 
-Angular Application
+### Angular Application
 navigate to the Task Folder and run
 ```bash
 npm start
